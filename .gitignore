@@ -1,6 +1,25 @@
-### Ghost ###
-
-.DS_Store
+# Ignore everything first:
 /*
-!/.gitignore
+
+# Then un-ignore the following:
+!.gitignore
+
+# ---Ghost core server.js file ---
+core/*
+!/core/
+/core/*
+!/core/server.js
+
+# ---- Theme files -----
+content/*
+!/content/
+
+content/themes/*
+!/content/themes/
+
+content/themes/lilim-ghost/*
+!/content/themes/lilim-ghost/
+
+!/content/themes/lilim-ghost/*
+
 
