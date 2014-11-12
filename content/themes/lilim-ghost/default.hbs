@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    {{! Page Meta }}
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+    <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
+
+    {{ghost_head}}
+</head>
+<body class="{{body_class}}">
+    <section id="menu-mobile">
+        <span class="bt-menu">Menu</span>
+        <div class="wrapper-menu">
+            <ul class="menu right">
+                <li><a href="http://moe.akibarika.org"><i class="icon-screen"></i><span>Home</span></a></li>
+                <li><a href="http://moe.akibarika.org/about/"><i class="icon-user"></i><span>About</span></a></li>
+                <li><a href="http://moe.akibarika.org/links/"><i class="icon-link"></i><span>Links</span></a></li>
+                <li><a href="http://moe.akibarika.org/works/"><i class="icon-code"></i><span>My Works</span></a></li>
+                <li><a href="http://moe.akibarika.org/pixiv-daily-ranking/"><i class="icon-bookmark"></i><span>Pixiv Ranking</span></a></li>
+            </ul>
+        </div>
+    </section>
+    {{{body}}}
+
+    <footer class="site-footer clearfix">
+         <section class="copyright"><a href="{{@blog.url}}">{{@blog.title}}</a> &copy; {{date format="YYYY"}}</section>
+         <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>
+    </footer>
+
+
+    {{ghost_foot}}
+
+    <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
+    <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
+
+</body>
+</html>

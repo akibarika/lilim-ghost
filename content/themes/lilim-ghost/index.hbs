@@ -1,0 +1,35 @@
+{{!< default}}
+<header id="header" class="{{#if @blog.cover}}{{/if}}">
+	<nav class="top">
+		<h1 class="hitokoto"><script src="http://api.hitokoto.us/rand?encode=js&charset=utf-8" ></script><script>hitokoto()</script></h1>
+		<ul class="right">
+			<li class="social">
+				<a href="https://twitter.com/Akiba_Rika" target="_blank"><i class="icon-twitter"></i></a>
+				<a href="http://weibo.com/rikatan" target="_blank"><i class="icon-weibo"></i></a>
+				<a href="http://www.flickr.com/photos/akibarika/" target="_blank"><i class="icon-flickr"></i></a>
+				<a href="https://plus.google.com/u/0/103659577793041448146" target="_blank"><i class="icon-googleplus"></i></a>
+				<a href="http://instagram.com/akibarika" target="_blank"><i class="icon-instagram"></i></a>
+				<a href="https://foursquare.com/akiba_rika" target="_blank"><i class="icon-foursquare"></i></a>
+			</li>
+		</ul>
+	</nav>
+    <nav class="main">
+ 		        <a id="logo" href="{{@blog.url}}" title="{{@blog.description}}">
+ 					Akiba<span>Rika</span>
+ 				</a>
+                <div class="wrapper-menu">
+                    <ul class="menu right">
+                        <li><a href="http://moe.akibarika.org"><i class="icon-screen"></i><span>Home</span></a></li>
+                        <li><a href="http://moe.akibarika.org/about/"><i class="icon-user"></i><span>About</span></a></li>
+                        <li><a href="http://moe.akibarika.org/links/"><i class="icon-link"></i><span>Links</span></a></li>
+                        <li><a href="http://moe.akibarika.org/works/"><i class="icon-code"></i><span>My Works</span></a></li>
+                        <li><a href="http://moe.akibarika.org/pixiv-daily-ranking/"><i class="icon-bookmark"></i><span>Pixiv Ranking</span></a></li>
+                    </ul>
+                </div>
+ 			</nav>
+</header>
+
+
+<main id="content" class="content" role="main">
+    {{> "loop"}}
+</main>
